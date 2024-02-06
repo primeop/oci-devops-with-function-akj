@@ -1,7 +1,10 @@
-## Copyright (c) 2021, Oracle and/or its affiliates.
+## Copyright (c) 2022, Oracle and/or its affiliates. 
 ## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
 
 variable "tenancy_ocid" {}
+variable "user_ocid" {}
+variable "fingerprint" {}
+variable "private_key_path" {}
 variable "compartment_ocid" {}
 variable "region" {}
 
@@ -12,7 +15,7 @@ variable "app_name" {
 
 variable "release" {
   description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.0"
+  default     = "1.3"
 }
 
 variable "execute_deployment" {
@@ -110,11 +113,11 @@ variable "repository_description" {
 }
 
 variable "git_repo" {
-  default = "https://github.com/RahulMR42/oci-sample-function-with-python"
+  default = "https://github.com/oracle-devrel/python-oci-devops-function"
 }
 
 variable "git_repo_name" {
-  default = "oci-sample-function-with-python"
+  default = "python-oci-devops-function"
 }
 
 variable "repository_repository_type" {
